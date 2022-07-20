@@ -1,8 +1,8 @@
-FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-stretch-slim AS base
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
 EXPOSE 80
 
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS build
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["src/LuKaSo.RabbitMqSagaExample.StrategyB/LuKaSo.RabbitMqSagaExample.StrategyB.csproj", "src/LuKaSo.RabbitMqSagaExample.StrategyB/"]
 RUN dotnet restore "src/LuKaSo.RabbitMqSagaExample.StrategyB/LuKaSo.RabbitMqSagaExample.StrategyB.csproj"

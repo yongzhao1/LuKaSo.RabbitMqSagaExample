@@ -4,6 +4,7 @@ using LuKaSo.RabbitMqSagaExample.Common.Infrastructure;
 using LuKaSo.RabbitMqSagaExample.Contracts.Broker;
 using LuKaSo.RabbitMqSagaExample.Contracts.OrderManagement;
 using LuKaSo.RabbitMqSagaExample.Contracts.Strategy;
+using MassTransit;
 using System;
 using System.Threading.Tasks;
 

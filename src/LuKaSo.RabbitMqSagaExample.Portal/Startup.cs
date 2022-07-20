@@ -48,7 +48,8 @@ namespace LuKaSo.RabbitMqSagaExample.Portal
                 .AllowAnyOrigin()
                 .AllowAnyMethod()
                 .AllowAnyHeader()
-                .AllowCredentials());
+                //.AllowCredentials()
+                );
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
@@ -63,10 +64,10 @@ namespace LuKaSo.RabbitMqSagaExample.Portal
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("http://localhost/api/broker/swagger/v1/swagger.json", "Broker API");
-                c.SwaggerEndpoint("http://localhost/api/orderManagement/swagger/v1/swagger.json", "Order management API");
-                c.SwaggerEndpoint("http://localhost/api/strategyA/swagger/v1/swagger.json", "Strategy A API");
-                c.SwaggerEndpoint("http://localhost/api/strategyB/swagger/v1/swagger.json", "Strategy B API");
+                c.SwaggerEndpoint("http://localhost:45671/api/broker/swagger/v1/swagger.json", "Broker API");
+                c.SwaggerEndpoint("http://localhost:45671/api/orderManagement/swagger/v1/swagger.json", "Order management API");
+                c.SwaggerEndpoint("http://localhost:45671/api/strategyA/swagger/v1/swagger.json", "Strategy A API");
+                c.SwaggerEndpoint("http://localhost:45671/api/strategyB/swagger/v1/swagger.json", "Strategy B API");
             });
 
             app.UseSpa(spa =>

@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:2.2-aspnetcore-runtime AS base
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 
 RUN apt-get update
 RUN apt-get install -y gnupg2
@@ -8,7 +8,7 @@ RUN apt-get install -y nodejs
 WORKDIR /app
 EXPOSE 80
 
-FROM microsoft/dotnet:2.2-sdk AS build
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 
 RUN apt-get update
 RUN apt-get install -y gnupg2

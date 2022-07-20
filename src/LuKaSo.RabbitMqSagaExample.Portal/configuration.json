@@ -5,8 +5,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "172.20.0.11",
-          "Port": 80
+          "Host": "localhost",
+          "Port": 55331
         }
       ],
       "UpstreamPathTemplate": "/broker/{url}",
@@ -17,8 +17,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "172.20.0.31",
-          "Port": 80
+          "Host": "localhost",
+          "Port": 5000
         }
       ],
       "UpstreamPathTemplate": "/orderManagement/{url}",
@@ -29,8 +29,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "172.20.0.21",
-          "Port": 80
+          "Host": "localhost",
+          "Port": 55355
         }
       ],
       "UpstreamPathTemplate": "/strategyA/{url}",
@@ -41,8 +41,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "172.20.0.22",
-          "Port": 80
+          "Host": "localhost",
+          "Port": 55357
         }
       ],
       "UpstreamPathTemplate": "/strategyB/{url}",

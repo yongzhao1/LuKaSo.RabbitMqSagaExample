@@ -1,15 +1,15 @@
 version: '3.4'
 
-services:
-  lukaso.rabbitmqsagaexample.broker:
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-    ports:
-      - "80"
+#services:
+  # lukaso.rabbitmqsagaexample.broker:
+  #   environment:
+  #     - ASPNETCORE_ENVIRONMENT=Development
+  #   ports:
+  #     - "80"
 
-  lukaso.rabbitmqsagaexample.portal:
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-    ports:
-      - "80"
+  # lukaso.rabbitmqsagaexample.portal:
+  #   environment:
+  #     - ASPNETCORE_ENVIRONMENT=Development
+  #   ports:
+  #     - "80"
 

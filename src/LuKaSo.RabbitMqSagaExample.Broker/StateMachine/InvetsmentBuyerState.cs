@@ -1,5 +1,6 @@
 ﻿using Automatonymous;
 using LuKaSo.RabbitMqSagaExample.Common.Models;
+using MassTransit;
 using System;
 
 namespace LuKaSo.RabbitMqSagaExample.Broker.StateMachine
